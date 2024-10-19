@@ -14,7 +14,6 @@ app.use(express.urlencoded({extended : false}));
 //routes
 app.use('/api/auth', userRoutes);
 
-
 mongoose.connect(DB_STRING)
 .then(() => {
   console.log("Connected to database Successfully!")
